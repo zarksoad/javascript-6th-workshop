@@ -1,3 +1,7 @@
+con
+
+
+
 let manejarAsincronia = (callback,promesa)=>{
     promesa.then(()=>{
         callback("hola")
