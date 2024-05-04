@@ -114,7 +114,7 @@ const getData = () =>{
                 console.error(error);
                 reject(error); // Rechaza la promesa si hay un error
               });
-        },1000)
+        },3000)
 
     })
 }
@@ -149,7 +149,7 @@ getData().then(({ rooms, roomTypes })=>{
                         reject("Ingrese una opcion valida")
                   }
                  
-            },1000)
+            },3000)
             
         })    
       
@@ -218,18 +218,12 @@ getData().then(({ rooms, roomTypes })=>{
       });
     
     
-    }
-            
+    }      
         }
-        main()    
-
-        
+        main()         
 })
 .catch(()=>{
     alert("Lista de habitaciones y reservas")
     console.table(rooms)
     console.table(reservas)
 })
-
-
-
